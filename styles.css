@@ -134,3 +134,71 @@ section:hover {
     transform: translateY(-3px);
 }
 
+/* Responsive Design Media Queries  */
+/*Tablet 768px x 1024px */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    
+    /* Redujo a 2 columnas */
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        padding-inline: 3%;
+    }
+    
+    /* Header ajustes para tablet */
+    header h1 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+    }
+    
+    header img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    section {
+        padding: 30px;
+    }
+}
+
+/* MOBILE PORTRAIT: 320px x 480px */
+@media screen and (max-width: 767px) {
+    /* Grid de 1 columna para móvil */
+    main {
+        grid-template-columns: 1fr;
+        padding-inline: 5%;
+    }
+    
+    /* Header para móvil */
+    header {
+        padding: 25px;
+    }
+    
+    header h1 {
+        font-size: 2.0em;
+        margin-bottom: 25px;
+    }
+    
+    header h3 {
+        font-size: 1.2em;
+    }
+    
+    header img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    /* Secciones más compactas */
+    section {
+        padding: 25px;
+    }
+    
+    /* Títulos más pequeños */
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    h3 {
+        font-size: 1.2em;
+    }
+}
+
