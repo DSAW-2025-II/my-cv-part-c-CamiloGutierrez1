@@ -12,7 +12,7 @@ body {
     padding: 10px;
 }
 
-/* Main */
+/* Main con Grid */
 main {
     max-width: 100%;
     margin: 0;
@@ -88,7 +88,7 @@ h5 {
     margin-bottom: 10px;
 }
 
-/* Párrafos */
+/* Parrafos */
 p {
     margin-bottom: 15px;
     text-align: justify;
@@ -135,56 +135,56 @@ section:hover {
 }
 
 /* Responsive Design Media Queries  */
-/*Tablet 768px x 1024px */
+/*Tablet */
 @media screen and (max-width: 1024px) and (min-width: 768px) {
-    
-    /* Redujo a 2 columnas */
+
+    /* Reduzco a 2 columnas */
     main {
-        grid-template-columns: repeat(2, 1fr);
-        padding-inline: 3%;
+        grid-template-columns: repeat(2,1fr);
+        padding-inline:3%;
     }
-    
-    /* Header ajustes para tablet */
+
+    /* Ajustes para tablet, reducción de las dimensiones */
     header h1 {
         font-size: 2.5em;
-        margin-bottom: 30px;
+        margin-bottom:30px ;
     }
     
     header img {
-        width: 200px;
+        width:200px;
         height: 200px;
     }
     
     section {
-        padding: 30px;
+        padding:30px;
     }
 }
 
-/* MOBILE PORTRAIT: 320px x 480px */
+/* Celular: 320px x 480px */
 @media screen and (max-width: 767px) {
-    /* Grid de 1 columna para móvil */
+    /* Grid de 1 columna para Celular */
     main {
-        grid-template-columns: 1fr;
-        padding-inline: 5%;
+        grid-template-columns:1fr;
+        padding-inline: 4%  ;
     }
-    
-    /* Header para móvil */
+
+    /* Header para Celular */
     header {
         padding: 25px;
     }
     
     header h1 {
-        font-size: 2.0em;
-        margin-bottom: 25px;
+        font-size: 1.5em;
+        margin-bottom: 20px;
     }
     
     header h3 {
-        font-size: 1.2em;
+        font-size: 1.0em;
     }
     
     header img {
         width: 150px;
-        height: 150px;
+        height: 140px;
     }
     
     /* Secciones más compactas */
